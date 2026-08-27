@@ -57,9 +57,9 @@
 //     console.log("Acesso negado!");
 // }
 // if ((ehAdmin || ehGrente) && senhaCorreta) {
-    
+
 // } else {
-    
+
 // }
 
 
@@ -159,88 +159,192 @@ Acima de 35°C	🔥 Muito quente
 
 
 
-/*
-let idade = Number(prompt(" Informe sua idade"));
-if (idade >= 18) {
-    console.log("Acesso liberado");
-} else {
-    console.log("Acesso negado");
-}
+
+// let idade = Number(prompt(" Informe sua idade"));
+// if (idade >= 18) {
+//     console.log("Acesso liberado");
+// } else {
+//     console.log("Acesso negado");
+// }
 
 
 
 
-const numero = Number(prompt("Escolha um número"));
-if (numero >= 1) {
-    console.log("Número positivo");
-} else {
-    console.log("Número negativo");
-}
+// const numero1 = Number(prompt("Escolha um número"));
+// if (numero1 >= 1) {
+//     console.log("Número positivo");
+// } else {
+//     console.log("Número negativo");
+// }
 
-const nota = Number(prompt("Consulte sua Aprovação"));
-if (nota >=60) {
-    console.log("Aprovado");
-} else {
-    console.log("Reprovado");
-}*/
+// const nota = Number(prompt("Consulte sua Aprovação"));
+// if (nota >= 60) {
+//     console.log("Aprovado");
+// } else {
+//     console.log("Reprovado");
+// }
 
 // let numero = Number(prompt("Escolha um número"));
 
 // if (numero > 0) {
 //     console.log("Positivo");
-// } else  if (numero =0) {
+// } else if (numero = 0) {
 //     console.log("Zero");
-// }else{
+// } else {
 //     console.log("Negativo")
 // }
-    
 
 
 
-// const idade =Number(prompt("Digite sua idade"));
-// if (idade <0) {
+
+// const idade1 = Number(prompt("Digite sua idade"));
+// if (idade1 < 0) {
 //     console.log("Idade inválida");
-// } else if ( idade >0 && idade <=12) {
+// } else if (idade1 > 0 && idade1 <= 12) {
 //     console.log(" Você é uma criança");
-// } else if (idade >12  && idade <=17) {
+// } else if (idade1 > 12 && idade1 <= 17) {
 //     console.log(" Você é um Adolecente");
-// } else if (idade <=18) {
+// } else if (idade1 <= 18) {
 //     console.log("Você é um Adulto");
 // } else {
-    
+
 // } {
-    
+
 // } {
-    
+
 // } {
-// }    
+// }
 
 
 
-// let numero =Number (prompt("Ímpar ou Par"))
-// let resultado = numero % 2
+// let numero2 = Number(prompt("Ímpar ou Par"))
+// let resultado = numero2 % 2
 
 // if (resultado === 0) {
 //     console.log("Número par")
-// }else{
+// } else {
 //     console.log("Número ímpar")
-// } 
+// }
 
 
 
-const usuario = "admin";
-const senha = "2617";
+// const usuario = "admin";
+// const senha = "2617";
 
-const senhaCorreta =( senha === "2617");
-const ehAdmin =(usuario === "admin" );
-const ehDuda = (usuario ===" duda");
-if ((ehAdmin && senhaCorreta) || (ehDuda && senhaCorreta )) {
-    console.log("Acesso liberado");
-}else{
-    console.log("Acesso negado");
-}
-if (ehAdmin || ehDuda && senhaCorreta) {
-    
-}else{
+// const senhaCorreta1 = (senha === "2617");
+// const ehAdmin = (usuario === "admin");
+// const ehDuda = (usuario === " duda");
+// if ((ehAdmin && senhaCorreta1) || (ehDuda && senhaCorreta)) {
+//    console.log("Login bem sucedido");
+// } else  {
+//  console.log("Acesso negado");
+// }
 
-}
+
+
+// // const ano = Number(prompt("Digite um ano"))
+// // //if ((ano % 4 === 0 && ano %  100 == 0) || (ano % 400 === 0)) {
+// //     alert(ano + "Ano bissexto.")
+// // } else {
+// //     alert(ano+"Ano não bissexto")
+// // } 
+
+
+// //while(true){
+//    // console.log("Ao Infinito e ... Além")
+// //}
+
+
+// let contador =1
+// while (contador <=5){
+//     console.log("Contagem:"  + contador)
+
+//     contador = (contador +1)
+// }
+
+// let tempo = 10
+
+// while (tempo > 0){
+//     console.log(tempo)
+
+//     tempo--
+// }
+//  console.log("Codigo acabou")
+
+
+
+// const senhaCorreta = "148supersenha"
+// let tentativa = ""
+
+
+// while (tentativa != senhaCorreta) {
+
+
+//     tentativa = prompt("Digite a senha:")
+
+//     if (tentativa === senhaCorreta) {
+//         console.log("Senha correta ! Acesso liberado.")
+//     }
+//     else {
+//         console.log("Senha incorreta. Tente novamente")
+//     }
+// }
+
+// let soma = 0;
+// let numero3 = 0;
+
+// while (soma <= 100) {
+
+//     numero3 = Number(prompt("Informe um número"))
+//     soma = soma + numero3
+
+// }
+
+// console.log("A soma dos números chegou em:" + soma)
+
+
+
+// let repitir = false
+
+// do {
+//     console.log("Só uma vez.")
+// } while (repitir)
+
+// let num = 10;
+// while (num < 5) {
+//     console.log("Isso NÂO vai aparecer")
+// }
+// do {
+//     console.log("Isso VAI aparecer pelo menos 1x")
+// }
+// while (num < 5)
+
+
+
+
+
+    const numeroSecreto = Math.floor(Math.raddom()* 10) + 1;
+    let palpite ; 
+    let tentativas1
+    alert("Adivinhe o número entre 1 a 10")
+
+    do {
+       alert(Math.floor(Math.random()* 10))
+
+        palpite=Number(prompt("Seu palpite"))
+        tentativas1++
+
+        if(Number.isNaN(palpite)){
+            alert("Digite um número válido")
+        }
+
+         else if (palpite == numeroSecreto){
+            alert("Acertou!!!" + "Em" + tentativas1 + " tentativas")
+        }
+        else if (palpite < numeroSecreto){
+            alert("Muito baixo! Tente maior")
+        }
+        else if (palpite > numeroSecreto){
+            alert("Muito alto! Tente um menor")
+        }
+    } while (palpite != numeroSecreto);
