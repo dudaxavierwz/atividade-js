@@ -75,9 +75,7 @@
 //     console.log("Acesso negado!")
 // } 
 
-/**
- * 
- */
+
 // const nota = 75;
 
 // if (nota>= 80) {
@@ -87,41 +85,6 @@
 // } else {
 //     console.log("Reprovado!");
 //}
-/**
-
-Exercício — Classificação da Temperatura
-
-Crie um programa em JavaScript que solicite ao usuário uma temperatura em graus Celsius (°C) e classifique a temperatura de acordo com as faixas abaixo:
-
-Temperatura	Classificação
-Abaixo de 0°C	🥶 Muito frio
-De 0°C a 15°C	❄️ Frio
-De 16°C a 25°C	😊 Agradável
-De 26°C a 35°C	🌡️ Quente
-Acima de 35°C	🔥 Muito quente
-*/
-
-
-// const temp = prompt("Muito Frio");
-// const temp2 = prompt("Frio");
-// const temp3 = prompt("Agradável");
-// const temp4 = prompt("Quente");
-// const temp5 = prompt("Muito quente");
-
-// const temperatura = Number (prompt(" Informe a temperatura"))
-
-// if (Number .isNaN(temp));
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -323,28 +286,133 @@ Acima de 35°C	🔥 Muito quente
 
 
 
-    const numeroSecreto = Math.floor(Math.raddom()* 10) + 1;
-    let palpite ; 
-    let tentativas1
-    alert("Adivinhe o número entre 1 a 10")
+// const numeroSecreto = Math.floor(Math.random ()* 10) + 1;
+// let palpite ; 
+// let tentativas1
+// alert("Adivinhe o número entre 1 a 10")
 
-    do {
-       alert(Math.floor(Math.random()* 10))
+// do {
+//    alert(Math.floor(Math.random()* 10))
 
-        palpite=Number(prompt("Seu palpite"))
-        tentativas1++
+//     palpite=Number(prompt("Seu palpite"))
+//     tentativas1++
 
-        if(Number.isNaN(palpite)){
-            alert("Digite um número válido")
-        }
+//     if(Number.isNaN(palpite)){
+//         alert("Digite um número válido")
+//     }
 
-         else if (palpite == numeroSecreto){
-            alert("Acertou!!!" + "Em" + tentativas1 + " tentativas")
-        }
-        else if (palpite < numeroSecreto){
-            alert("Muito baixo! Tente maior")
-        }
-        else if (palpite > numeroSecreto){
-            alert("Muito alto! Tente um menor")
-        }
-    } while (palpite != numeroSecreto);
+//      else if (palpite == numeroSecreto){
+//         alert("Acertou!!!" + "Em" + tentativas1 + " tentativas")
+//     }
+//     else if (palpite < numeroSecreto){
+//         alert("Muito baixo! Tente maior")
+//     }
+//     else if (palpite > numeroSecreto){
+//         alert("Muito alto! Tente um menor")
+//     }
+// } while (palpite != numeroSecreto);
+
+
+
+
+
+
+
+// for (let conta = 0; conta < 10; conta++) {
+//     console.log(conta)
+// }
+// console.log("O loop terminou.")
+
+
+// const numero = Number(prompt("Tabuada de qual número?"))
+
+// if (Number.isNaN(numero)) {
+//     console.log("❌ número inválido.")
+// } else {
+//     console.log(`\n TABUADA DO ${numero} \n`)
+
+//     for (let i = 1; i <= 10; i++) {
+//         const resultado = numero * i
+
+//         console.log(`${numero} x ${i} = ${resultado}`)
+
+
+//     }
+
+
+// }
+
+
+
+
+console.log("Números pares de 0 a 20:\n")
+
+for(let pares= 0; pares <=20; pares += 2 ){
+    console.log(pares)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for(let numero = 1; numero <=3; numero++){
+// let resultado = "";
+//     for(let vezes = 1; vezes <=3; vezes++){
+//         resultado += numero+ " "
+//     }
+
+//     console.log(resultado)
+
+// }
+
+
+
+// for (let ast = 1; ast <= 5; ast++) {
+//     let resultado = "";
+//     for (let vezes = 1; vezes <= ast; vezes++) {
+//         resultado += "* "
+
+//     }
+//     console.log(resultado)
+// }
+
+
+
+for (let conta =0; conta <= 10; conta++){
+    console.log(conta)
+}
+console.log(  )
+
+
+
+
+const numero = Number(prompt("Tabuada de qual número?"))
+if (Number.isNaN(numero)){
+    alert("Número inválido.")
+
+} else {
+    console.log(`\n TABUADA DO ${numero} \n`)}
+    for(let i = 1; i<=10; i++){
+
+    
+const resultado = numero * i
+
+console.log(` ${numero} x ${i}= ${resultado}`)
+    
+}
+
+
+
