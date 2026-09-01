@@ -391,65 +391,115 @@
 
 
 
-for (let conta =0; conta <= 10; conta++){
-    console.log(conta)
+// for (let conta =0; conta <= 10; conta++){
+//     console.log(conta)
+// }
+// console.log(  )
+
+
+
+
+// const numero = Number(prompt("Tabuada de qual número?"))
+// if (Number.isNaN(numero)){
+//     alert("Número inválido.")
+
+// } else {
+//     console.log(`\n TABUADA DO ${numero} \n`)}
+//     for(let i = 1; i<=10; i++){
+
+
+// const resultado = numero * i
+
+// console.log(` ${numero} x ${i}= ${resultado}`)
+
+// }
+
+
+
+
+
+
+
+
+
+
+// console.log("Números pares de 1 a 50 :\n")
+
+// for (let pares= 0; pares <=50; pares +=2){
+//     console.log(pares)
+// }
+
+
+
+// const numeroSecreto = Math.floor(Math.random()*100) + 1;
+// let palpite ;
+// let tentativas =0;
+// alert ("Adivinhe o número entre 1 a 100")
+// do{
+// palpite =Number(prompt("Seu palpite"))
+// tentativas++
+
+// if(Number . isNaN(palpite)){
+//     alert("Número inválido")
+// }
+
+// else if(palpite == numeroSecreto){
+//     alert ("Acertou!!!"+ "Em" +tentativas + "tentativas")
+// }
+// else if (palpite < numeroSecreto){
+//     alert("Muito baixo! Tente um maior")
+// }
+// else if (palpite > numeroSecreto){
+//     alert("Muito alto! Tente um menor")
+// }
+// }while (palpite != numeroSecreto);
+
+
+// let tempo = Number(prompt("Contagem regressiva: \n"))
+// let regressiva =Number(prompt("Informe um número"))
+// for (regressiva; regressiva>= 0; regressiva--){
+// console.log(regressiva)
+// }
+
+
+
+const numeros = [1, 2, 3, 4, 5]
+const nomes = ["ana", "caio", "lucas" ,"duda", "camilla"]
+
+console.log(numeros[0])
+console.log(nomes[0])
+
+console.log(nomes.length)
+
+for (let i = 0; i < nomes.length; i++) {
+
+    console.log(nomes[i])
 }
-console.log(  )
 
 
 
+const frutas = ["maçã" , "laranja" , "uva" , "morango"]
 
-const numero = Number(prompt("Tabuada de qual número?"))
-if (Number.isNaN(numero)){
-    alert("Número inválido.")
-
-} else {
-    console.log(`\n TABUADA DO ${numero} \n`)}
-    for(let i = 1; i<=10; i++){
-
-
-const resultado = numero * i
-
-console.log(` ${numero} x ${i}= ${resultado}`)
-
+for (const fruta of frutas){
+    console.log(fruta)
 }
 
 
-
-
-
-
-// 
-
-
-
-console.log("Números pares de 1 a 50 :\n")
-
-for (let pares= 0; pares <=50; pares +=2){
-    console.log(pares)
+const listaNumeros = [10,25,8,42,15,7]
+let soma = 0;
+for(const numero of listaNumeros){
+    soma+= numero
 }
+console.log("Numeros " , listaNumeros)
+console.log("Soma " , soma)
 
 
+const notas = [7.5 , 9.0 , 6.5 , 8.8 , 10.0 , 5.5];
+let maiorNota = notas [0];
 
-const numeroSecreto = Math.floor(Math.random()*100) + 1;
-let palpite ;
-let tentativas =0;
-alert ("Adivinhe o número entre 1 a 100")
-do{
-palpite =Number(prompt("Seu palpite"))
-tentativas++
+for( const  nota of notas ){
+if (nota > maiorNota)
+    maiorNota= nota
+}   
 
-if(Number . isNaN(palpite)){
-    alert("Número inválido")
-}
-
-else if(palpite == numeroSecreto){
-    alert ("Acertou!!!"+ "Em" +tentativas + "tentativas")
-}
-else if (palpite < numeroSecreto){
-    alert("Muito baixo! Tente um maior")
-}
-else if (palpite > numeroSecreto){
-    alert("Muito alto! Tente um menor")
-}
-}while (palpite != numeroSecreto);
+console.log("Maior nota é;" , maiorNota);
