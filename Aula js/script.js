@@ -345,11 +345,11 @@
 
 
 
-console.log("Números pares de 0 a 20:\n")
+// console.log("Números pares de 0 a 20:\n")
 
-for(let pares= 0; pares <=20; pares += 2 ){
-    console.log(pares)
-}
+// for(let pares= 0; pares <=20; pares += 2 ){
+//     console.log(pares)
+// }
 
 
 
@@ -407,12 +407,49 @@ if (Number.isNaN(numero)){
     console.log(`\n TABUADA DO ${numero} \n`)}
     for(let i = 1; i<=10; i++){
 
-    
+
 const resultado = numero * i
 
 console.log(` ${numero} x ${i}= ${resultado}`)
-    
+
 }
 
 
 
+
+
+
+// 
+
+
+
+console.log("Números pares de 1 a 50 :\n")
+
+for (let pares= 0; pares <=50; pares +=2){
+    console.log(pares)
+}
+
+
+
+const numeroSecreto = Math.floor(Math.random()*100) + 1;
+let palpite ;
+let tentativas =0;
+alert ("Adivinhe o número entre 1 a 100")
+do{
+palpite =Number(prompt("Seu palpite"))
+tentativas++
+
+if(Number . isNaN(palpite)){
+    alert("Número inválido")
+}
+
+else if(palpite == numeroSecreto){
+    alert ("Acertou!!!"+ "Em" +tentativas + "tentativas")
+}
+else if (palpite < numeroSecreto){
+    alert("Muito baixo! Tente um maior")
+}
+else if (palpite > numeroSecreto){
+    alert("Muito alto! Tente um menor")
+}
+}while (palpite != numeroSecreto);
