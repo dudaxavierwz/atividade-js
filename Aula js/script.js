@@ -463,43 +463,133 @@
 
 
 
-const numeros = [1, 2, 3, 4, 5]
-const nomes = ["ana", "caio", "lucas" ,"duda", "camilla"]
+// const numeros = [1, 2, 3, 4, 5]
+// const nomes = ["ana", "caio", "lucas", "duda", "camilla"]
 
-console.log(numeros[0])
-console.log(nomes[0])
+// console.log(numeros[0])
+// console.log(nomes[0])
 
-console.log(nomes.length)
+// console.log(nomes.length)
 
-for (let i = 0; i < nomes.length; i++) {
+// for (let i = 0; i < nomes.length; i++) {
 
-    console.log(nomes[i])
-}
-
-
-
-const frutas = ["maçã" , "laranja" , "uva" , "morango"]
-
-for (const fruta of frutas){
-    console.log(fruta)
-}
+//     console.log(nomes[i])
+// }
 
 
-const listaNumeros = [10,25,8,42,15,7]
-let soma = 0;
-for(const numero of listaNumeros){
-    soma+= numero
-}
-console.log("Numeros " , listaNumeros)
-console.log("Soma " , soma)
+
+// const frutas = ["maçã", "laranja", "uva", "morango"]
+
+// for (const fruta of frutas) {
+//     console.log(fruta)
+// }
 
 
-const notas = [7.5 , 9.0 , 6.5 , 8.8 , 10.0 , 5.5];
-let maiorNota = notas [0];
+// const listaNumeros = [10, 25, 8, 42, 15, 7]
+// let soma = 0;
+// for (const numero of listaNumeros) {
+//     soma += numero
+// }
+// console.log("Numeros ", listaNumeros)
+// console.log("Soma ", soma)
 
-for( const  nota of notas ){
-if (nota > maiorNota)
-    maiorNota= nota
-}   
 
-console.log("Maior nota é;" , maiorNota);
+// const notas = [7.5, 9.0, 6.5, 8.8, 10.0, 5.5];
+// let maiorNota = notas[0];
+
+// for (const nota of notas) {
+//     if (nota > maiorNota)
+//         maiorNota = nota
+// }
+
+// console.log("Maior nota é;", maiorNota);
+
+
+// const pessoa = {
+//     nome: "Lucas",
+//     idade: 33,
+//     email: "email@teste.com",
+//     genero: "M",
+//     cpf: "497.755.999.99"
+// }
+
+// console.log(pessoa)
+// console.log(pessoa.nome)
+// console.log(pessoa["idade"])
+
+// for (const chave in pessoa) {
+
+
+
+//     console.log(pessoa[chave])
+
+// }
+
+
+
+
+// const aluno = {
+
+//     nome: "Ana",
+//     matricula: "202609021",
+//     curso: "Javascript",
+//     nota: 9.5
+
+// }
+
+// console.log("Dados do aluno:\n")
+// for (const chave in aluno) {
+
+//     const valor = aluno[chave]
+//     console.log("chave:" + chave + "valor" + valor)
+// }
+
+// const carrinho = [
+//     {produtos: "camiseta", preco: 49.90, quantidade: 2 },
+
+//     {produtos: "calça jeans", preco: 150.90, quantidade: 1 },
+
+//     {produtos: "tenis", preco: 199.90, quantidade: 1 },
+// ]
+
+// for(const itemDoMercado of carrinho){
+
+// console.log(itemDoMercado.produtos)
+// console.log(itemDoMercado.preco)
+
+// }
+
+
+// const pedidos = [
+
+//     { produto: "Baconturbo", preco: 55.50, quantidade: 1 },
+
+//     { produto: "Cheddarbacon", preco: 49.90, quantidade: 2 },
+
+//     { produto: "Cheddarchiken", preco: 45.50, quantidade: 1 },
+
+//     { produto: "Tastybacon", preco: 49.90, quantidade: 1 },
+// ]
+
+// let maiorValor = 0;
+// let totalPedido = 0;
+
+// for (const itensDoCarrinhos of pedidos) {
+
+//     let valorTotal = Number((itensDoCarrinhos.preco * itensDoCarrinhos.quantidade).toFixed(2));
+
+//     console.log("Produto" + itensDoCarrinhos.produto)
+//     console.log("Quantidade" + itensDoCarrinhos.quantidade)
+//     console.log("Valor total: r$" + valorTotal)
+
+//     totalPedido += valorTotal;
+
+//     if (valorTotal > maiorValor) {
+//         maiorValor = valorTotal;
+//     }
+
+// }
+
+// console.log("Maior valor: R$" + maiorValor);
+// console.log("Total do pedido: R$" + totalPedido);
+
