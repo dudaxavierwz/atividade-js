@@ -560,36 +560,36 @@
 // }
 
 
-// const pedidos = [
+const pedidos = [
 
-//     { produto: "Baconturbo", preco: 55.50, quantidade: 1 },
+    { produto: "Baconturbo", preco: 55.50, quantidade: 1 },
 
-//     { produto: "Cheddarbacon", preco: 49.90, quantidade: 2 },
+    { produto: "Cheddarbacon", preco: 49.90, quantidade: 2 },
 
-//     { produto: "Cheddarchiken", preco: 45.50, quantidade: 1 },
+    { produto: "Cheddarchiken", preco: 45.50, quantidade: 1 },
 
-//     { produto: "Tastybacon", preco: 49.90, quantidade: 1 },
-// ]
+    { produto: "Tastybacon", preco: 49.90, quantidade: 1 },
+]
 
-// let maiorValor = 0;
-// let totalPedido = 0;
+let maiorValor = 0;
+let totalPedido = 0;
 
-// for (const itensDoCarrinhos of pedidos) {
+for (const itensDoCarrinhos of pedidos) {
 
-//     let valorTotal = Number((itensDoCarrinhos.preco * itensDoCarrinhos.quantidade).toFixed(2));
+    let valorTotal = Number((itensDoCarrinhos.preco * itensDoCarrinhos.quantidade).toFixed(2));
 
-//     console.log("Produto" + itensDoCarrinhos.produto)
-//     console.log("Quantidade" + itensDoCarrinhos.quantidade)
-//     console.log("Valor total: r$" + valorTotal)
+    console.log("Produto" + itensDoCarrinhos.produto)
+    console.log("Quantidade" + itensDoCarrinhos.quantidade)
+    console.log("Valor total: r$" + valorTotal)
 
-//     totalPedido += valorTotal;
+    totalPedido += valorTotal;
 
-//     if (valorTotal > maiorValor) {
-//         maiorValor = valorTotal;
-//     }
+    if (valorTotal > maiorValor) {
+        maiorValor = valorTotal;
+    }
 
-// }
+}
 
-// console.log("Maior valor: R$" + maiorValor);
-// console.log("Total do pedido: R$" + totalPedido);
+console.log("Maior valor: R$" + maiorValor);
+console.log("Total do pedido: R$" + totalPedido);
 
