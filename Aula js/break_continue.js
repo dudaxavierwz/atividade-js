@@ -41,13 +41,17 @@ const alunos =[
     {nome:"Geovanna", nota:9},
     {nome:"Renan", nota:5},
     {nome:"Pedro", nota:4},
-    {nome:"Kamilly", nota:8}
+    {nome:"Kamilly", nota:8},
     {nome:"Chico", nota:2}]
 
 let aprovados;
 
-for(const alunos of alunos){
+for(const aluno of alunos){
+if(aluno.nota<7){
+    continue;
+}else {
+    console.log(aluno.nome)
+}
 
 }
 
-// Nao consegui terminar a tempo
